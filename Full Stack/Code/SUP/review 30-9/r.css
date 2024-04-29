@@ -1,0 +1,35 @@
+.s + h1{}
+.s ~ h1{
+    
+}
+
+:root{
+    --color: red;
+}
+
+.r{
+    color: var(--color);
+    color: color(srgb 0.1 0.1 0.7 / 0.5);
+    color: oklch(70% 0.3 20 / 0.5);
+    color: color-mix(in oklab, white, red 30%);
+    background: linear-gradient(
+        70deg in oklab,
+        oklch(10% 0.1 90) 0%,
+        oklch(50% 0.3 100) 100%
+    );
+    background: conic-gradient(
+        from 0deg at 50% 50% in oklab,
+        oklch(10% 0.3 100) 0%,
+        oklch(70% 0.5 200) 100%
+    );
+}
+
+@media (color-gamut: srgb){
+    .r{
+        color: oklch(84.26% 0.2723 141.35 / 50%);
+    }
+}
+
+@media (prefers-color-scheme: dark){
+
+}

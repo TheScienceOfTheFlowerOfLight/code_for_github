@@ -1,0 +1,23 @@
+.c{
+    color: color(display-p3, 0.1 0.1 0.44 / 0.1);/* rec2020 */
+    color: oklch(70% 0.1 300 / 0.7);
+    color: color-mix(oklab, white, green 30%);
+    background: linear-gradient(
+        90deg in oklab,
+        oklch(50% 0.1 30) 0%,
+        oklch(70% 0.33 44) 100%
+    );
+    background: conic-gradient(
+        from 90deg at 50% 50% in oklab,
+        oklch(50% 0.1 30) 0%,
+        oklch(70% 0.33 44) 100%
+    );
+}
+
+@media (color-gamut: p3){
+
+}
+
+@media (prefers-color-scheme: dark){
+    
+}

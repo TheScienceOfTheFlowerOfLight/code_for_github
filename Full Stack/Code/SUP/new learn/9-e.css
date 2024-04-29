@@ -1,0 +1,8 @@
+:root{
+    color-scheme: light dark;
+    --color1: light-dark(red,green);
+}
+
+body{
+    background: var(--color1);
+}

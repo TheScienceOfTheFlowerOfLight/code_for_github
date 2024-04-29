@@ -1,0 +1,629 @@
+<!--  التعليقات ----------------------- -->
+    <!-- ffff -->
+    <!--
+        sss
+        sss
+        sss
+    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- التخطيط --------------------------------- -->
+    <!-- 
+        كل جزء يتم وضع عناصره به كما فى التصميم
+        كل مجموعة عناصر لهم علاقة معا يوضعوا فى صندوق
+        لو كان الصندوق الواحد بها أكثر من مجموعة عناصر 
+        توضع كل مجموعة فى صندوق معا
+        مثال--------------
+        الجزء الكامل من الصفحة {
+            صندوق {
+                عناصر
+            }
+            صندوق {
+                صندوق {
+                    عناصر
+                }
+                صندوق {
+                    عناصر
+                }
+            }
+            صندوق
+        }
+        ---------------------
+        بعد ذلك أنظم مكانهم
+        بعد ذلك أنشئ مظهرهم 
+     -->
+
+
+
+
+
+
+
+
+
+
+<!-- طريقة كتابة العناصر ----------------------- -->
+<h1></h1> <!-- كتابة يدوية -->
+<h1></h1> <!-- كتابة تلقائية -->
+<h1>ooo<span>s</span></h1> <!-- h1{ooo}>span{s} -->
+<div class="d"></div> <!-- .d -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- أجزاء رئيسية ----------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <!--
+          كل مجموعة عناصر معا كالقائمة
+          توضع فى صندوق 
+          و كل صندوق أضع أسفله كود 
+           الخاص به  css
+           : مثل 
+    -->
+    <div id="logo">
+        <img src="" alt="" class="logo_img">
+        <h3 class="logo_text"></h3>
+    </div>
+    <style>
+        .logo_img{
+
+        }
+
+        .logo_text{
+
+        }
+    </style>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- معلومات ----------------------------------- -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- 
+            <ميتا>: عنصر البيانات الوصفية
+            يمثل عنصر <ميتا> عنصر HTML البيانات الوصفية التي لا يمكن تمثيلها بعناصر HTML الوصفية الأخرى، مثل <base> أو <link> أو <script> أو <style> أو <title>.
+
+            يمكن أن يكون نوع البيانات الوصفية التي يوفرها عنصر <ميتا> أحد العناصر التالية:
+
+            إذا تم تعيين سمة الاسم، فإن عنصر <ميتا> يوفر بيانات وصفية على مستوى المستند، تنطبق على الصفحة بأكملها.
+            إذا تم تعيين سمة http-equiv، فإن عنصر <ميتا> يكون عنصر <ميتا> عبارة عن توجيه براغما، ويوفر معلومات مكافئة لما يمكن أن يقدمه رأس HTTP ذو الاسم نفسه.
+            إذا تم تعيين السمة charset، يكون العنصر <ميتا> عبارة عن بيان مجموعة أحرف، مما يوفر ترميز الأحرف الذي تم ترميز المستند به.
+            إذا تم تعيين سمة itemprop، فإن العنصر <ميتا> يوفر بيانات تعريف محددة من قبل المستخدم.
+         --> 
+
+        <meta charset="UTF-8"> <!-- لتحديد نوع الحروف -->
+
+        <!-- التوافق مع الهواتف -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 
+            viewport لتحديد حجم شاشة المتصفح للصفحة على الهواتف
+            content="width=device-width لجعل الصفحة تتناسب مع حجم الهاتف
+            initial-scale=1.0   لجعل حجم العناصر على الهاتف بهذه النسبة
+         -->
+
+        <meta http-equiv="X-UA-Compitable" content="IE=edge">
+
+        <!-- تحديث الصفحة بعد وقت -->
+        <meta http-equiv="refresh" content="300;url=https://google.com">
+
+        <!-- تحديد لون شريط العنوان و التبويبات للمتصفح على الهواتف و الأجهزة اللوحية -->
+        <meta name="color-theme" content="#e5fff">
+
+        <!-- Icon لعلامة تبويب الصفحة -->
+        <link rel="shortcut icon" href="Media/image/icon" type="image/x-icon">
+        <link rel="apple-touch-icon" href="Media/image/icon/">
+
+        <!-- عنوان الصفحة -->
+        <title>T1</title>
+
+        <!-- وصف للصفحة -->
+        <meta name="description" content="">
+
+        <!-- صاحب الصفحة -->
+        <meta name="author" content="">
+
+        <!-- كلمات مفتاحية -->
+        <meta name="keywords" content="
+            html,
+            css,
+            js
+        ">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- استدعاء ---------------------------------------------- -->
+        <!-- css -->
+            <link rel="stylesheet" href="Code/css/">
+            <link rel="stylesheet" href="https://smsm.com/ff.css">
+            <!-- أفضل فى أخر الملف css لقد جربت وأجد أن استدعاء ملفات  -->
+
+        <!-- js -->
+            <!-- فى أخر الملف --> <!-- get js -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- مسار ملف -------------------------------------------------- -->
+    <link rel="stylesheet" href="#idQ">
+    <link rel="stylesheet" href="Code/css/index.css">
+    <link rel="stylesheet" href="../../Full Stack/">
+    <link rel="stylesheet" href="http://google.com">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- font -->
+        <link rel="stylesheet" href="https://google.com">
+        <link rel="stylesheet" href="Code/css/Fonts/fonts.css">
+
+        
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+<!-- تقسيم -------------------------------------------- -->
+        <header>
+            <nav></nav>
+        </header>
+        <main>
+            <aside></aside>
+            <section></section>
+            <article></article>
+        </main>
+        <footer></footer>
+        <div></div>
+        <span></span>
+        <!-- 
+           span عدا block  كلهم من نوع 
+        -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- تنظيم ---------------------------------------------- -->
+        <table border="1">
+            <thead></thead>
+            <tbody></tbody>
+            <tfoot></tfoot>
+            <!-- 
+                يتم تنفيذها علي العناصر بداخلهم مباشرتا css  لو استخدمت عليهم خصاص 
+             -->
+
+            <tr>
+                <th></th>
+                <td colspan="3" rowspan="2"></td>
+            </tr>
+
+            <tr>
+
+            </tr>
+        </table>
+
+        <ol type="1" start="3">
+            <li></li>
+            <li></li>
+        </ol>
+
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <dl>
+            <dt></dt>
+                <dd></dd>
+                <dd></dd>
+            
+            <dt></dt>
+        </dl>
+
+        <br>
+        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- عرض -------------------------------------------------------- -->
+    <!-- عرض فردى --> 
+        <!-- نص -->
+            <h1></h1> 
+            <label for=""></label> <!-- not block -->
+            <p>ddd dddd ddd <br> &nbsp; &lt; &gt;</p>
+            <!-- 
+                لا تقبل إلا مسافة واحدة بين الحرفين
+                لا تنزل لسطر جديد
+                أفضلها لكتابة الفقرات أو النص العادى
+            --> 
+
+            <pre contenteditable="true">dd ddd    ddddd</pre>
+            <button>dddd</button>
+            <code></code>
+            <i></i>
+            <b></b>
+            <sub></sub>
+            <sup></sup>
+            <del></del>
+            <ins></ins>
+            <mark></mark>
+            <pdi></pdi>
+            <center></center>
+            <small></small>
+            <big></big>
+            
+            <!-- رموز -->
+            <p>▶🐶</p>
+
+            <!-- صور -->
+            <img src="Media/image/" alt="">
+
+            <!-- صورة متحركة / PDF -->
+            <embed src="" type="">
+            
+            <!-- صوت -->
+            <audio src="Media/audio/" preload="none" controls loop muted></audio>
+
+            <!-- فديو -->
+            <video src="Media/video/" poster="Media/image/" preload="none" controls loop muted></video>
+
+            <!-- عرض صفحة أو جزء منه داخل الصفحة -->
+            <!-- 
+            https يجب أن يكون هو و صفحتك لهم برتوكول 
+            يجب أن يكون صاحب الموقع الأخر يسمح بذلك
+            -->
+            <iframe src="" width="" height="" allowfullscreen sandbox="allow-same-origin allow-scripts" frameborder="0"></iframe>
+
+            <!-- فديو youtube -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JOFtjLpwBLE?si=XTpaiJONds8KWiqt?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <!-- google map خريطة من  -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1663.2043689681138!2d31.35551278248815!3d31.50473824564137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDMwJzE3LjEiTiAzMcKwMjEnMTUuMyJF!5e1!3m2!1sar!2seg!4v1695912848906!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <!-- شريط قياس -->
+            <meter min="" max="" value="" low="" high="" optimum="">50%</meter>
+
+    <!-- عرض مجموعة -->
+        <!-- صندوق بإطار لوضع عناصر به -->
+        <fieldset>
+            <legend></legend>
+            <!-- 
+                legend لانشاء عنوان للصندوق
+                يكون العنوان مكتوب بين الاطار العلوى
+            -->
+            <!-- هنا توضع العناصر -->
+        </fieldset>
+        <!-- عادتا يستخدم مع نماذج الادخال -->
+
+        <!-- details  -->
+        <details>
+            <summary></summary>
+
+        </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- تنقل ---------------------------------------------- -->
+        <a href="" target="_blank"></a>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- تنزيل ------------------------------------------------ -->
+        <a href="" download=""></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ادخال ------------------------------------------- -->
+    <!-- كتابة -->
+        <textarea placeholder="" maxlength="" cols="11" rows="5" >ss</textarea>
+        <input type="text" value="" placeholder="" maxlength="">
+   
+    <!-- تحديد قيمة -->
+        <input type="range" min="" max="" value="">
+
+    <!-- اختيار -->
+        <input type="radio" name="" value="" checked>
+        <select size="3" multiple="true">
+            <option value="">fff</option>
+            <option value="" selected></option>
+        </select>
+
+    <!-- ملف -->
+        <input type="file" accept=".png,.svg,text/*" disabled>
+    
+
+
+
+
+
+
+
+
+
+
+
+        
+<!-- ارسال للخادم ----------------------------------------------->
+        <form name="" method="post" action="Code/html/">
+            <!-- 
+                method="post" ترسل البيانات للخادم دون أن تظهر فى الرابط على المتصفح
+                method="get" ترسل البيانات للخادم و تتظهرها على رابط الصفحة فى المتصفح
+                name يجب أن يكون لهم  form وكذلك  form كل عناصر الادخال ب 
+             -->
+
+            <input type="hidden" name="" value="" checked>
+            <input type="text" name="" minlength="" required oninvalid="this.setCustomValidity('')">
+
+
+            <button type="reset"></button>
+            <button type="submit"></button>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  ميزات مشتركة  --------------------------------------------->
+        <h1 id="" class="s ss sss" style="color: red; background: green;" title="" contenteditable="true"></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- من العمل js فى حالة منع --------------------------- -->
+        <noscript>
+            <h1></h1>
+        </noscript>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- للأنترنت البطئ ------------------------------------- -->
+            <!-- 
+                استعملها للملفات المهمة فقط ، حتى لا تكثر الملفات المستعملة عليها فتضيع فائدتها
+             -->
+            <!-- إعطاء أولوية لتحميل الملفات -->
+                <!-- head -->
+                    <link rel="preload" href="sle.css" as="any_thing" fetchpriority>
+                    <link rel="preload" href="style.css" as="font" fetchpriority="high"> <!-- ذا أولوية ولكن أعلى -->
+                    <link rel="preload" href="font.css" as="font" fetchpriority="low"> <!-- ذا أولوية ولكن أقل -->
+
+                <!-- body -->
+                    <!-- صور و ما مثلها -->
+                        <!-- تحديد الأولوية -->
+                            <img src="img/g1.png"  fetchpriority="low"/> <!-- أخر الصور التى سيتم تحميلها -->
+                            <img src="img/اخيرا وصلوا.PNG" fetchpriority="high"/> <!-- أول الصور التى سيتم تحميلها -->
+
+                        <!-- تحميل كسول -->
+                            <!-- هو تحميل الصورة أو الفديو عند اقتراب ظهورها من شاشة المتصفح -->
+                                <img src="img/2.png" loading="lazy"/>
+
+                    <!--  ملفات js -->
+                        <script src="" async></script> <!-- تحميل غير متزامن -->
+
+                        <script src="" defer async fetchpriority="high"></script>
+                        <!-- 
+                            fetchpriority الأخرى js لتحديد أولويته بالنسبة لملفات 
+                            defer تحميل الملف بعد تحميل الصفحة بالكامل و الملفات الأخرى الموجودة بها
+                         -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- بفضل الله النهاية و الحمد لله *** النهاية ولا اله الا الله *** النهاية -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- for JS -------------------------------------- -->
+            <div id="d1"></div>
+            <iframe id="open_street_map" width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=0&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=7/28.372/31.091">عرض خريطة بحجم أكبر</a></small>
+            <h1 id="ele">dd</h1>
+
+            <!-- الرد على الحدث -->
+                <button onclick="yea()" >Click me!</button>
+
+
+
+        <style>
+
+        </style>
+
+
+        <script>
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- باقى استدعاء ------------------------------------ -->
+        <!-- get js -->
+            <!-- js -->
+                <script src="Code/js/index/header.js"></script>
+                <script type="modual" src="Code/js/index/header.js"></script>
+                <script src="https://smsm.com/jjj.js"></script>
+
+        
+    </body>
+</html>

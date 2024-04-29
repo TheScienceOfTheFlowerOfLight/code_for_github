@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            color-scheme: light dark;
+        }
+
+        :root{
+            --color-test: light-dark(#333, #ccc);
+            --color2: blue;
+            --color3: schemed-value(light white,dark green)
+        }
+
+        /* @media (prefers-color-scheme: dark){
+           :root{
+                --color2: green;
+           }
+        } */
+
+        body , *{
+            background-color: var(--color3);
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

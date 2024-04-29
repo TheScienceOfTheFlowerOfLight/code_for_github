@@ -1,0 +1,96 @@
+@######################################
+			@***أساسية***@
+- server ip 
+- astra (theme)
+- starter template
+	> BrandStore  (store)
+	> Outdoor Adventure (posts , info , land page )
+	> Love Nuture (img , sound , video)
+- Elementor
+- Elementor header & footer
+- contact form 7
+
+@######################################
+			@***خاصة***@
+- الأساسية لإنشاء مواقع 
+	عرض معلومة
+	تعريف بشخص أو شركة
+	مقالات
+	كل المواقع التى تحتاج اضافات خاصة لها
+- simply (image)
+- Video Gallery  (video)
+- WooCommerce   (shope)
+	> WooCommerce Stripe Payment Gateway
+	> WooCommerce PayPal Payments
+	> WBW Currency Switcher 
+		>> currency code          https://coinyep.com/ar/currencies
+	> PAYPAL CURRENCY CONVERTER PRO FOR WOOCOMMERCE
+		https://codecanyon.net/item/paypal-currency-converter-pro-for-woocommerce/6343249?irgwc=1&clickid=z91XgTzB2xyNUPQQ3YzI9XpcUkAWTKTi1zlxRw0&iradid=275988&irpid=2109402&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_2109402&utm_medium=affiliate&utm_source=impact_radius
+
+@######################################################
+			@***قبل الرفع على الاستضافة***@
+- All-in-One WP Migration
+@######################################################
+			@***أساسى بعد الرفع على الاستضافة***@
+- OMGF
+- Really Simple SSL
+- Yoast SEO
+- Add Meta Tag Keywords
+
+@######################################################
+			@***خدمات***@
+مظهر
+- White Label CMS  (CMS)  (((يطبق فى النهاية)))
+- WP Dark Mode
+- Polylang (post , info)
+- WEGLOT  (store 1translate free )
+حساب
+- Ultimate Member (register-profile-account)
+- Ultimate Member – reCAPTCHA  
+- LoginPress  
+- WPS Hide Login
+- Heateor Social Login WordPress
+اشعارات
+- MailPoet (ااشتراك فى خدمة اشعارات البريد الالكترونى - ارسال رسالة لبريد المشتركين - ارسال رسالة باخر منشور نشر - رسالة تذكير لشراء المنتج )
+مشاركة
+- Sassy Social Share (page-post-product)
+- wpDiscuz	(page-post)
+روابط
+- Redirection (By John Godley) (مدونات كبيرة - متاجر كبيرة - نقل الموقع من الاستضافة لاخرة)
+- Broken Link Checker	(مدونات كبيرة - متاجر كبيرة )
+تحليلات
+- Google Analytics     https://analytics.google.com
+	- Google Tag Manager        https://tagmanager.google.com
+	- HFCM
+	or
+	- MonsterInsights
+Woocommerce
+- filter
+	- Product Filter for WooCommerce 	 $ 	https://codecanyon.net/item/woocommerce-product-filter/8514038
+أخرى
+- Translate WordPress with GTranslate
+
+@#########################################################
+			@***تسريع + تحسين***@
+- Resize Image After Upload (from shortpixels)
+- Converter for Media  (jpg , png) (+30)
+- LazyLoad by wp rocket 
+- WP Fastest Cache
+- UpdraftPlus
+- WP-Optimize
+- Clearfy
+- Cloudflare   (لو الموقع عالمى)
+
+@#########################################################
+			@***أمن***@
+- Wordfence Security
+- Blackhole for Bad Bots
+
+@#########################################################
+			@***استضافة***@
+- Cloudways WordPress Migrator
+
+@#########################################################
+			@***النهاية***@
+- ultimate member  (user role)
+- White Label CMS  (CMS)
