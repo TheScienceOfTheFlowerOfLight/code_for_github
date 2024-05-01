@@ -720,9 +720,33 @@ a{
 @keyframes ooo{}
 
 .animation{
-    animation: ani 3s linear infinite forwards alternate/* normal reverse alternate-reverse */,
+    animation: ani 3s linear infinite alternate/* normal reverse alternate-reverse */ forwards/* none forwards */,
                 ooo 1s cubic-bezier(0.1,0,0.3,-3000) 1 alternate;
     animation-delay: 1s,1.5s;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    /* 
+        animation-timing-function:
+         تحدد كيفية تغير سرعة الرسوم المتحركة بمرور الوقت. CSS هذه خاصية 
+         لها خمس قيم هم
+         cubic-bezier(p1, p2, p3, p4)
+            p1 and p3 values must be in the range of 0 to 1
+            cubic-bezier(0.2, -2, 0.8, 2)
+                النقطة الأولى (0.2): تمثل هذه النقطة بداية الحركة. في هذه الحالة، تُحدد أن تبدأ الحركة ببطء نسبيًا.
+                النقطة الثانية (-2): تمثل هذه النقطة تسارعًا سلبيًا، مما يعني أن سرعة الحركة ستبدأ في الانخفاض بعد النقطة الأولى. 
+                النقطة الثالثة (0.8 ): تمثل هذه النقطة تسارعًا إيجابيًا، مما يعني أن سرعة الحركة ستبدأ في الزيادة مرة أخرى.
+                النقطة الرابعة (2): تمثل هذه النقطة نهاية الحركة. في هذه الحالة، تُحدد أن تنتهي الحركة ببطء نسبيًا.
+         linear: تُحدد وظيفة توقيت الرسوم المتحركة هذه سرعة ثابتة للحركة.
+         ease-in: تُحدد وظيفة توقيت الرسوم المتحركة هذه تسارعًا إيجابيًا في بداية الحركة.
+         ease-out: تُحدد وظيفة توقيت الرسوم المتحركة هذه تسارعًا سلبيًا في نهاية الحركة.
+         ease-in-out: تُحدد وظيفة توقيت الرسوم المتحركة هذه تسارعًا إيجابيًا في بداية الحركة وتسارعًا سلبيًا في نهاية الحركة.
+
+
+        fill-mode
+         بعد انتهائها anmation لتحدد ماذا سيحدث لتغيرات 
+         لها قيمتان 
+         none animation سيعود الوضع كما كان قبل تشغيل 
+         forwards animation سيبقى الوضع عند أخر تغيير حدث من 
+    */
 }
 
 
@@ -733,9 +757,14 @@ a{
 
 
 
-/* content */
+
+
+
+
+/* content ---------------------------------------------*/
 .content::after{
-    content: "";
+    content: "";/* ""  url() */
+    /* خصائص تريد تطبيقها عليه */
 }
 
 
@@ -746,7 +775,11 @@ a{
 
 
 
-/* دعم */
+
+
+
+
+/* دعم --------------------------------------------------*/
 .sup{
     width: calc(11px + 10%) !important;
     color: inherit;/* initial */
@@ -761,7 +794,9 @@ a{
 
 
 
-/* خصائص خاصة */
+
+
+/* خصائص خاصة -------------------------------------------*/
     /* scrollbar */
     html::-webkit-scrollbar{
         width: 11px;
@@ -782,6 +817,7 @@ a{
     }
 
 
+
     /* meter */
     meter::-webkit-meter-bar{
         background: lavenderblush;
@@ -791,6 +827,7 @@ a{
     meter::-webkit-meter-optimum-value{}
 
 
+    
     /* range */
     .range{
         appearance: none;
@@ -827,8 +864,12 @@ a{
 
 
 
-/* media */
+
+
+
+/* @media ------------------------------------------------*/
 /* width from devtool + 17 */
+
 @media print{
 
 }
@@ -847,7 +888,15 @@ a{
 
 
 
-/* عمليات خاصة */
+
+
+
+/* عمليات خاصة --------------------------------------------*/
+    /** غشاء على الصورة */
+    /** حركة  */
+
+
+
     /** غشاء على الصورة */
     .img{
         outline-offset: -1000px;
@@ -873,6 +922,7 @@ a{
         }
 
 
+
     /** حركة  */
     .object{
         position: absolute;
@@ -886,12 +936,12 @@ a{
 
         background: green;
 
-        animation:  x1 3s linear normal 1 forwards,
-                    y1 3s cubic-bezier(0.3,-1000,0.1,0) normal 1 forwards,
-                    x2 2s linear normal 1 forwards,
-                    cricle 5s linear normal 1 forwards,
-                    x3 2s linear normal 1 forwards;
-        animation-delay: 0s,0s,3s,5s,7s;
+        animation:  x1 3s linear 1 normal forwards,
+                    y1 3s cubic-bezier(0.3,-1000,0.1,0) 1 normal forwards,
+                    x2 2s linear 1 normal forwards,
+                    cricle 5s linear 1 normal forwards,
+                    x3 2s linear 1 normal forwards;
+        animation-delay: 0s,0s,3s,5s,10s;
     }
 
     @keyframes x1{
@@ -928,6 +978,9 @@ a{
         }
     }
 
+
+
+/* ######### ########## ################ ############ */
 
 
 
