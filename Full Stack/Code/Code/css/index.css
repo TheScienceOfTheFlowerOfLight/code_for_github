@@ -480,7 +480,11 @@
     border-radius: 10px;
     border: 12px red solid;
     border: none; /* hidden */
-    box-sizing: border-box; /* width تحسب مع ال padding + border تستخدم لجعل ال */
+    box-sizing: border-box; 
+    /*
+        وليس خارجهم height و width فى ال padding و border تستخدم لجعل ال 
+        أى لو العرض 100 و الاطار 10 لن يضاف الاطار على العرض ، ولكن سيصبح من العرض ، أى سيأخذ من العرض
+    */
 
     outline-width: 11px;
     outline-color: green;

@@ -41,10 +41,18 @@ class P2{
 
     /* range ---------------------------------------------------*/
         range(){
+            this.rangeAbled();
             this.rangeEqualDuration();
             this.takeCurrenttime();
             this.controlWithCurrenttime();
         }
+
+        /* range_abled */
+            rangeAbled(){
+               this.sound.addEventListener(`play`,e=>{
+                    this.controlForSound.disabled = false;
+               });
+            }
 
         /* range == duration */
             rangeEqualDuration(){
@@ -60,7 +68,7 @@ class P2{
                 });
             }
 
-        /* contorWithCurrentime */
+        /* controlWithCurrenttime */
             controlWithCurrenttime(){
                 this.controlForSound.addEventListener(`input`,e=>{
                     this.sound.currentTime = Number(this.controlForSound.value);

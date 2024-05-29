@@ -46,9 +46,10 @@ class P1{
             }
 
             stopMove(moveOnParentEvent){
-                this.child.addEventListener(`pointerup`,e=>{
+                document.addEventListener(`pointerup`,e=>{
                     this.parent.removeEventListener(`pointermove`,moveOnParentEvent);
                 });
+
             }
 }
 

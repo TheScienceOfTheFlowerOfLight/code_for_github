@@ -67,6 +67,27 @@
 Woocommerce
 - filter
 	- Product Filter for WooCommerce 	 $ 	https://codecanyon.net/item/woocommerce-product-filter/8514038
+شات
+- Tidio
+Review
+- ReviewX
+بوابات الدفع
+- أوروبا و أمريكا
+    - strip
+    - paypal business
+    - skrill
+    - neteller
+    - 2checkout
+    - moneygram
+- الشرق الأوسط و شمال أفريقيا
+    - hyperpay
+    - myfatoora
+    - paytaps
+    - 2checkout
+    - paypal business
+    - skrill
+    - neteller
+    - moneygram
 أخرى
 - Translate WordPress with GTranslate
 
