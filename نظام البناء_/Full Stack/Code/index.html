@@ -450,18 +450,39 @@
 
 
 <!-- عرض -------------------------------------------------------- -->
+    <!-- عرض فردى -->
+    <!-- عرض مجموعة -->
+    
     <!-- عرض فردى --> 
+        <!-- نص -->
+        <!-- رموز -->
+        <!-- صور -->
+        <!-- صورة متحركة / PDF -->
+        <!-- صوت -->
+        <!-- فديو -->
+        <!-- عرض صفحة أو جزء منه داخل الصفحة -->
+        <!-- youtube فديو -->
+        <!-- google map خريطة من  -->
+        <!-- شريط قياس -->
+
+        
+
         <!-- نص -->
             <h1></h1> 
             <label for=""></label> <!-- not block -->
             <p>ddd dddd ddd <br> &nbsp; &lt; &gt;</p>
             <!-- 
                 لا تقبل إلا مسافة واحدة بين الحرفين
-                لا تنزل لسطر جديد
+                لا تنزل لسطر جديد بين النص
                 أفضلها لكتابة الفقرات أو النص العادى
             --> 
 
             <pre contenteditable="true">dd ddd    ddddd</pre>
+            <!-- 
+                 تقبل أكثر من مسافة واحدة بين الحرفين
+                 تنزل لسطر جديد بين النص
+            --> 
+
             <button>dddd</button>
             <code></code>
             <i></i>
@@ -477,10 +498,10 @@
             <big></big>
             
             <!-- رموز -->
-            <p>▶🐶</p>
+                <p>▶🐶</p>
 
             <!-- صور -->
-            <img src="Media/image/" alt="">
+                <img src="Media/image/" alt="">
 
             <!-- صورة متحركة / PDF -->
             <embed src="" type="">
@@ -492,39 +513,48 @@
             <video src="Media/video/" poster="Media/image/" preload="none" controls loop muted></video>
 
             <!-- عرض صفحة أو جزء منه داخل الصفحة -->
-            <!-- 
-            https يجب أن يكون هو و صفحتك لهم برتوكول 
-            يجب أن يكون صاحب الموقع الأخر يسمح بذلك
-            -->
-            <iframe src="" width="" height="" allowfullscreen sandbox="allow-same-origin allow-scripts" frameborder="0"></iframe>
+                <!-- 
+                https يجب أن يكون هو و صفحتك لهم برتوكول 
+                يجب أن يكون صاحب الموقع الأخر يسمح بذلك
+                -->
+                <iframe src="" width="" height="" allowfullscreen sandbox="allow-same-origin allow-scripts" frameborder="0"></iframe>
 
             <!-- فديو youtube -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JOFtjLpwBLE?si=XTpaiJONds8KWiqt?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- youtube أعرف كيف تحصل على كود اضافة الفديو من  -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JOFtjLpwBLE?si=XTpaiJONds8KWiqt?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
             <!-- google map خريطة من  -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1663.2043689681138!2d31.35551278248815!3d31.50473824564137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDMwJzE3LjEiTiAzMcKwMjEnMTUuMyJF!5e1!3m2!1sar!2seg!4v1695912848906!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1663.2043689681138!2d31.35551278248815!3d31.50473824564137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDMwJzE3LjEiTiAzMcKwMjEnMTUuMyJF!5e1!3m2!1sar!2seg!4v1695912848906!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             
             <!-- شريط قياس -->
-            <meter min="" max="" value="" low="" high="" optimum="">50%</meter>
+                <meter min="" max="" value="" low="" high="" optimum="">50%</meter>
+
+
 
     <!-- عرض مجموعة -->
         <!-- صندوق بإطار لوضع عناصر به -->
-        <fieldset>
-            <legend></legend>
-            <!-- 
-                legend لانشاء عنوان للصندوق
-                يكون العنوان مكتوب بين الاطار العلوى
-            -->
-            <!-- هنا توضع العناصر -->
-        </fieldset>
-        <!-- عادتا يستخدم مع نماذج الادخال -->
+        <!-- details  -->
+
+
+
+        <!-- صندوق بإطار لوضع عناصر به -->
+            <fieldset>
+                <legend></legend>
+                <!-- 
+                    legend لانشاء عنوان للصندوق
+                    يكون العنوان مكتوب بين الاطار العلوى
+                -->
+                <!-- هنا توضع العناصر -->
+            </fieldset>
+            <!-- عادتا يستخدم مع نماذج الادخال -->
 
         <!-- details  -->
-        <details>
-            <summary></summary>
+            <details>
+                <summary><!-- هنا النص بجوار السهم --></summary>
+                <!-- هنا النص عند فتح السهم -->
+            </details>
 
-        </details>
-
+<!-- ################################################## -->
 
 
 
@@ -539,8 +569,12 @@
 
 
 <!-- تنقل ---------------------------------------------- -->
-        <a href="" target="_blank"></a>
-        
+        <a href="" target="_blank">
+            <!-- المحتوى الذى سيتم الضغط عليه للانتقال -->
+        </a>
+        <a href="tel:+"></a>
+
+<!-- ################################################## -->      
 
 
 
@@ -557,6 +591,7 @@
 <!-- تنزيل ------------------------------------------------ -->
         <a href="" download=""></a>
 
+<!-- ################################################## -->
 
 
 
@@ -571,14 +606,20 @@
 
 <!-- ادخال ------------------------------------------- -->
     <!-- كتابة -->
+    <!-- اختيار -->
+    <!-- ملف -->
+
+
+
+    <!-- كتابة -->
         <textarea placeholder="" maxlength="" cols="11" rows="5" >ss</textarea>
         <input type="text" value="" placeholder="" maxlength="">
-   
-    <!-- تحديد قيمة -->
-        <input type="range" min="" max="" value="">
-
+        
     <!-- اختيار -->
+        <input type="range" min="" max="" value="">
+        <input type="color" value="">
         <input type="radio" name="" value="" checked>
+        <input type="checkbox" value="" checked>
         <select size="3" multiple="true">
             <option value="">fff</option>
             <option value="" selected></option>
@@ -586,7 +627,8 @@
 
     <!-- ملف -->
         <input type="file" accept=".png,.svg,text/*" disabled>
-    
+  
+<!-- ################################################## -->
 
 
 
@@ -609,12 +651,21 @@
 
             <input type="hidden" name="" value="" checked>
             <input type="text" name="" minlength="" required oninvalid="this.setCustomValidity('')">
-
+             <!-- 
+                oninvalid 
+                : يتم تنفيذها عند الضغط على زر الارسال وكان
+                - البيان فى العنصر ليس من نوع بياناته
+                - required لم يتم ادخال بيان لعنصر له الميزة
+              -->
 
             <button type="reset"></button>
+            <!-- حذف كل البيانات المدخلة فى عناصر الادخال ، داخل النموذج -->
+
             <button type="submit"></button>
+            <!-- ارسال البيانات المدخلة فى عناصر الادخال ، داخل النموذج ، للخادم -->
         </form>
 
+<!-- ################################################## -->
 
 
 
@@ -630,6 +681,7 @@
 <!--  ميزات مشتركة  --------------------------------------------->
         <h1 id="" class="s ss sss" style="color: red; background: green;" title="" contenteditable="true"></h1>
 
+<!-- ################################################## -->
 
 
 
@@ -646,6 +698,8 @@
         <noscript>
             <h1></h1>
         </noscript>
+
+<!-- ################################################## -->
 
 
 
@@ -688,6 +742,7 @@
                             defer تحميل الملف بعد تحميل الصفحة بالكامل و الملفات الأخرى الموجودة بها
                          -->
 
+<!-- ################################################## -->
 
 
 
