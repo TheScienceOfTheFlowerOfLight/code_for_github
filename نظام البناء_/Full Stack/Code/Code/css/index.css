@@ -3,6 +3,7 @@
         معلمينى
         Gemini
         Copilot
+        chatGPT
         Google
         w3school
         MDN docs
@@ -982,35 +983,41 @@
     */
 
     /* شكل الخط */
-    /*
-        خطوط موجودة فى كل المتصفحات 
-            font-family: sans-serif,serif,cursive; 
-            https://www.w3schools.com/cssref/css_websafe_fonts.php    
-    */
-    font-family: 'RobotoCondensed-Regular', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-style: italic;
+        /*
+            خطوط موجودة فى كل المتصفحات 
+                font-family: sans-serif,serif,cursive; 
+                https://www.w3schools.com/cssref/css_websafe_fonts.php    
+        */
+        font-family: 'RobotoCondensed-Regular', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-style: italic;
 
 
 
     /* تجميل للخط */
-    color: red;
-    text-decoration: underline red solid 15px;
-    text-transform: capitalize;/* lowercase, uppercase */
-    word-spacing: 2px;
-    letter-spacing: -2px;
+        color: red;
+        text-decoration: underline red solid 15px;
+        text-transform: capitalize;/* lowercase, uppercase */
+        word-spacing: 2px;     /* التباعد بين الكلمات */
+        letter-spacing: -2px;   /* التباعد بين الحروف */
+        /* 
+            word-spacing
+            letter-spacing
+            لو القيمة موجبة تزيد المسافة بين 
+            لو القيمة سالبة تقل المسافة بين
+        */
 
 
 
     /* محاذاة النص */
-    text-align: center;
-    line-height: 100; /*
-        لكى يكون النص فى منتصف العمود للعنصر الاب 
-        تضع الرقم نصف ارتفاع العنصر الأب
-        y لو قللت عنه يقل ارتفاع العنصر على محور 
-        Y لو ازدت عنه يذيد ارتفاع العنصر على محور 
-    */
+        text-align: center;
+        line-height: 100; /*
+            لكى يكون النص فى منتصف العمود للعنصر الاب 
+            تضع الرقم نصف ارتفاع العنصر الأب
+            y لو قللت عنه يقل ارتفاع العنصر على محور 
+            Y لو ازدت عنه يذيد ارتفاع العنصر على محور 
+        */
 
 }
 
@@ -1034,47 +1041,47 @@
 
 
 /* animation ---------------------------------------------*/
-@keyframes ani {
-    0%{}
-    10%{}
-    50%{}
-    90%{}
-    /* ---------- */
-    from{color: red;}
-    to{color: blue;}
-}
+    @keyframes ani {
+        0%{}
+        10%{}
+        50%{}
+        90%{}
+        /* ---------- */
+        from{color: red;}
+        to{color: blue;}
+    }
 
-@keyframes ooo{}
+    @keyframes ooo{}
 
-.animation{
-    animation: ani 3s linear infinite alternate/* normal reverse alternate-reverse */ forwards/* none forwards */,
-                ooo 1s cubic-bezier(0.1,0,0.3,-3000) 1 alternate;
-    animation-delay: 1s,1.5s;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
-    /* 
-        animation-timing-function:
-         تحدد كيفية تغير سرعة الرسوم المتحركة بمرور الوقت. CSS هذه خاصية 
-         لها خمس قيم هم
-         cubic-bezier(p1, p2, p3, p4)
-            p1 and p3 values must be in the range of 0 to 1
-            cubic-bezier(0.2, -2, 0.8, 2)
-                النقطة الأولى (0.2): تمثل هذه النقطة بداية الحركة. في هذه الحالة، تُحدد أن تبدأ الحركة ببطء نسبيًا.
-                النقطة الثانية (-2): تمثل هذه النقطة تسارعًا سلبيًا، مما يعني أن سرعة الحركة ستبدأ في الانخفاض بعد النقطة الأولى. 
-                النقطة الثالثة (0.8 ): تمثل هذه النقطة تسارعًا إيجابيًا، مما يعني أن سرعة الحركة ستبدأ في الزيادة مرة أخرى.
-                النقطة الرابعة (2): تمثل هذه النقطة نهاية الحركة. في هذه الحالة، تُحدد أن تنتهي الحركة ببطء نسبيًا.
-         linear: تُحدد وظيفة توقيت الرسوم المتحركة هذه سرعة ثابتة للحركة.
-         ease-in: تُحدد وظيفة توقيت الرسوم المتحركة هذه تسارعًا إيجابيًا في بداية الحركة.
-         ease-out: تُحدد وظيفة توقيت الرسوم المتحركة هذه تسارعًا سلبيًا في نهاية الحركة.
-         ease-in-out: تُحدد وظيفة توقيت الرسوم المتحركة هذه تسارعًا إيجابيًا في بداية الحركة وتسارعًا سلبيًا في نهاية الحركة.
+    .animation{
+        animation: ani 3s linear/* نوع الحركة */ infinite/* عدد مرات التنفيذ */ alternate/* normal reverse alternate-reverse */ /* اتجاه الحركة */ forwards/* none forwards */,
+                    ooo 1s cubic-bezier(0.1,0,0.3,-3000) 1 alternate;
+        animation-delay: 1s,1.5s; /* وقت الانتظار قبل بدء تنفيذ الحركة */
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+        /* 
+            animation-timing-function:
+            تحدد كيفية تغير سرعة الرسوم المتحركة بمرور الوقت. CSS هذه خاصية 
+            لها خمس قيم هم
+            cubic-bezier(p1, p2, p3, p4)
+                p1 and p3 values must be in the range of 0 to 1
+                cubic-bezier(0.2, -2, 0.8, 2)
+                    النقطة الأولى (0.2): تمثل هذه النقطة بداية الحركة. في هذه الحالة، تُحدد أن تبدأ الحركة ببطء نسبيًا.
+                    النقطة الثانية (-2): تمثل هذه النقطة تسارعًا سلبيًا، مما يعني أن سرعة الحركة ستبدأ في الانخفاض بعد النقطة الأولى. 
+                    النقطة الثالثة (0.8 ): تمثل هذه النقطة تسارعًا إيجابيًا، مما يعني أن سرعة الحركة ستبدأ في الزيادة مرة أخرى.
+                    النقطة الرابعة (2): تمثل هذه النقطة نهاية الحركة. في هذه الحالة، تُحدد أن تنتهي الحركة ببطء نسبيًا.
+            linear: تُحدد وظيفة توقيت الرسوم المتحركة هذه سرعة ثابتة للحركة.
+            ease-in: تُحدد وظيفة توقيت الرسوم المتحركة هذه تسارعًا إيجابيًا في بداية الحركة.
+            ease-out: تُحدد وظيفة توقيت الرسوم المتحركة هذه تسارعًا سلبيًا في نهاية الحركة.
+            ease-in-out: تُحدد وظيفة توقيت الرسوم المتحركة هذه تسارعًا إيجابيًا في بداية الحركة وتسارعًا سلبيًا في نهاية الحركة.
 
 
-        fill-mode
-         بعد انتهائها anmation لتحدد ماذا سيحدث لتغيرات 
-         لها قيمتان 
-         none animation سيعود الوضع كما كان قبل تشغيل 
-         forwards animation سيبقى الوضع عند أخر تغيير حدث من 
-    */
-}
+            fill-mode
+            بعد انتهائها anmation لتحدد ماذا سيحدث لتغيرات 
+            لها قيمتان 
+            none animation سيعود الوضع كما كان قبل تشغيل 
+            forwards animation سيبقى الوضع عند أخر تغيير حدث من 
+        */
+    }
 
 /* ################################################### */
 
@@ -1094,10 +1101,10 @@
 
 
 /* content ---------------------------------------------*/
-.content::after{
-    content: "";/* ""  url() */
-    /* خصائص تريد تطبيقها عليه */
-}
+    .coo::after{
+        content: "";/* ""  url() */
+        /* خصائص تريد تطبيقها عليه */
+    }
 
 /* ################################################### */
 
@@ -1117,10 +1124,10 @@
 
 
 /* دعم --------------------------------------------------*/
-.sup{
-    width: calc(11px + 10%) !important;
-    color: inherit;/* initial */
-}
+    .sup{
+        width: calc(11px + 10%) !important;
+        color: inherit;/* initial */
+    }
 
 /* ################################################### */
 
@@ -1140,62 +1147,64 @@
 
 /* خصائص خاصة -------------------------------------------*/
     /* scrollbar */
-    html::-webkit-scrollbar{
-        width: 11px;
-        height: 100px;
+        html::-webkit-scrollbar{
+            width: 11px;
+            height: 100px;
 
-        background: green;
-    }
+            background: green;
+        }
 
-    html::-webkit-scrollbar-thumb{
-        width: 10px;
-        height: 3px;
+        html::-webkit-scrollbar-thumb{
+            width: 10px;
+            height: 3px;
 
-        background: red;
-    }
+            background: red;
+        }
 
-    html::-webkit-scrollbar-track{
+        html::-webkit-scrollbar-track{
 
-    }
+        }
 
 
 
     /* meter */
-    meter::-webkit-meter-bar{
-        background: lavenderblush;
-    }
-    meter::-webkit-meter-even-less-good-value{}
-    meter::-webkit-meter-suboptimum-value{}
-    meter::-webkit-meter-optimum-value{}
+        meter::-webkit-meter-bar{
+            background: lavenderblush;
+        }
+        meter::-webkit-meter-even-less-good-value{}
+        meter::-webkit-meter-suboptimum-value{}
+        meter::-webkit-meter-optimum-value{}
 
 
     
     /* range */
-    .range{
-        appearance: none;
+        .range{
+            appearance: none;
 
-        width: 100px;
-        height: 100px;
-        overflow: hidden;
-    }
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
 
-    .range::-webkit-slider-thumb{
-        appearance: none;
+            background: blue;
+        }
 
-        width: 10px;
-        height: 100px;
+        .range::-webkit-slider-thumb{
+            appearance: none;
 
-        border-radius: 50%;
-        box-shadow: -100px 0 0 99px yellow;
+            width: 10px;
+            height: 100px;
 
-        background: green;
-    }
+            border-radius: 50%;
+            box-shadow: -100px 0 0 99px yellow;
 
-    .range::-webkit-slider-thumb:active{
-        box-shadow: -100px 0 0 99px yellow, inset 0 0 0 3px orange;
+            background: green;
+        }
 
-        background: red;
-    }
+        .range::-webkit-slider-thumb:active{
+            box-shadow: -100px 0 0 99px yellow, inset 0 0 0 3px orange;
+
+            background: red;
+        }
 
 /* ################################################### */
 
@@ -1217,17 +1226,17 @@
 
 
 /* @media ------------------------------------------------*/
-/* width from devtool + 17 */
+    /* width from devtool + 17 */
 
-@media print{
+    @media print{
 
-}
-
-@media screen and (min-width: 100px) and (max-width: 700px) and (orientation: landscape) and (orientation: portrait){
-    .a{
-        width: 12px;
     }
-}
+
+    @media screen and (min-width: 100px) and (max-width: 700px) and (orientation: landscape) and (orientation: portrait){
+        .a{
+            width: 12px;
+        }
+    }
 
 /* ################################################### */
 
@@ -1295,7 +1304,7 @@
                     x2 2s linear 1 normal forwards,
                     cricle 5s linear 1 normal forwards,
                     x3 2s linear 1 normal forwards;
-        animation-delay: 0s,0s,3s,5s,10s;
+        animation-delay: 0s,0s,3s,6s,11s;
     }
 
     @keyframes x1{
